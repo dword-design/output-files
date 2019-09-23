@@ -1,7 +1,7 @@
 {
   "name": "output-files",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
+  "main": "src/index.js",
   "repository": "git@github.com:dword-design/output-files.git",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
