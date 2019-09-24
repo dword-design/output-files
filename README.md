@@ -26,12 +26,12 @@ yarn add output-files
 const outputFiles = require('output-files')
 
 await outputFiles('example', {
-  'example1.js': "console.log('This is a first example')"
-  'example2.js': "console.log('This is another example')",
-  data: {
+  'example1.txt': 'Donec id elit non mi porta gravida at eget.',
+  'example2.txt': 'Aenean eu leo quam. Pellentesque ornare.',
+  someFolder: {
     'content.txt': 'Vivamus sagittis lacus vel augue laoreet.',
     'README.md': '# This needs to be filled',
-  }
+  },
 })
 ```
 
