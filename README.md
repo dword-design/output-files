@@ -2,6 +2,8 @@
 # output-files
 <!--/@-->
 
+[![Build Status](https://travis-ci.org/dword-design/output-files.svg?branch=master)](https://travis-ci.org/dword-design/output-files)
+
 <!--@pkg.description-->
 Output a tree of files and directories by providing an object. Especially useful for testing with real files.
 <!--/@-->
