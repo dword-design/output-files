@@ -2,8 +2,9 @@
 # output-files
 <!--/@-->
 
-[![Build Status](https://travis-ci.org/dword-design/output-files.svg?branch=master)](https://travis-ci.org/dword-design/output-files)
-[![Coverage Status](https://coveralls.io/repos/github/dword-design/output-files/badge.svg?branch=master)](https://coveralls.io/github/dword-design/output-files?branch=master)
+<!--@shields('travis', 'coveralls')-->
+[![Build Status](https://img.shields.io/travis/dword-design/output-files/master.svg)](https://travis-ci.org/dword-design/output-files) [![Coverage Status](https://img.shields.io/coveralls/dword-design/output-files/master.svg)](https://coveralls.io/r/dword-design/output-files?branch=master)
+<!--/@-->
 
 <!--@pkg.description-->
 Output a tree of files and directories by providing an object. Especially useful for testing with real files.
