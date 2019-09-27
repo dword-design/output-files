@@ -1,6 +1,6 @@
 {
   "name": "output-files",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/dword-design/output-files",
   "author": "Sebastian Landwehr <info@dword-design.de>",
