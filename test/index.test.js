@@ -54,6 +54,34 @@ test('nested folders', async () => withLocalTmpDir(async path => {
   ])
 }))
 
+test('folder chain', async () => withLocalTmpDir(async path => {
+  await outputFiles(path, {
+    'foo.txt': 'foo',
+    'folder/folder2': {
+      'foo.txt': 'foo bar',
+    }
+  })
+  expect(await glob('**', { cwd: path })).toEqual([
+    'folder',
+    'folder/folder2',
+    'folder/folder2/foo.txt',
+    'foo.txt',
+  ])
+}))
+
+test('file folder chain', async () => withLocalTmpDir(async path => {
+  await outputFiles(path, {
+    'foo.txt': 'foo',
+    'folder/folder2/foo.txt': 'foo bar',
+  })
+  expect(await glob('**', { cwd: path })).toEqual([
+    'folder',
+    'folder/folder2',
+    'folder/folder2/foo.txt',
+    'foo.txt',
+  ])
+}))
+
 test('empty folder', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
