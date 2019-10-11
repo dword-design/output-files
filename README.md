@@ -25,13 +25,28 @@ yarn add output-files
 ```js
 const outputFiles = require('output-files')
 
-await outputFiles('example', {
-  'example1.txt': 'Donec id elit non mi porta gravida at eget.',
-  'example2.txt': 'Aenean eu leo quam. Pellentesque ornare.',
+// outputs files in process.cwd()
+await outputFiles({
+  'example1.md': 'Donec id elit non mi porta gravida at eget.',
+  'example2.md': 'Aenean eu leo quam. Pellentesque ornare.',
   someFolder: {
-    'content.txt': 'Vivamus sagittis lacus vel augue laoreet.',
+    'content.md': 'Vivamus sagittis lacus vel augue laoreet.',
     'README.md': '# This needs to be filled',
   },
+})
+
+// outputs files in example subdirectory
+await outputFiles('example', {
+  'foo.md': 'This is an interesting file',
+  'example2.md': 'This is another interesting file',
+})
+
+// you can also define subdirectories without nesting the object
+await outputFiles({
+  'folder1/folder2': {
+    'foo.md': 'This is an interesting file',
+  },
+  'foo/bar/example2.md': 'This is another interesting file',
 })
 ```
 

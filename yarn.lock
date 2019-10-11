@@ -4028,10 +4028,10 @@ widest-line@^1.0.0:
   dependencies:
     string-width "^1.0.1"
 
-with-local-tmp-dir@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/with-local-tmp-dir/-/with-local-tmp-dir-0.1.1.tgz#3fb34301b33fa3330640607dceedfba3ce9c6ed7"
-  integrity sha512-+BuB5FjZ5RpUliSwR5nt4qyKJXPtzclp+Dj7pVgDYAacqEtNQeX57ZUX0F9FTFhRtUxTFkA39y7kQ8h98Ooang==
+with-local-tmp-dir@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/with-local-tmp-dir/-/with-local-tmp-dir-2.0.0.tgz#8143e96d983de50d138ae99130eadcb438061b1b"
+  integrity sha512-pCQUsl7f4qfNq01xKvL45Z/MHNf/3zhoVGLD5TQQaLFzMnuntKRRHmCHpwuKE1n1bAyHGbH1UNPY4uBI0rq9tA==
   dependencies:
     tmp-promise "^2.0.2"
 
