@@ -3,23 +3,24 @@ const withLocalTmpDir = require('with-local-tmp-dir')
 const { exists } = require('fs-extra')
 const glob = require('glob-promise')
 const { spawn } = require('child-process-promise')
+const expect = require('expect')
 
-test('undefined path uses cwd', async () => withLocalTmpDir(async path => {
+it('undefined path uses cwd', async () => withLocalTmpDir(async path => {
   await spawn(require.resolve('./cli'), { cwd: path })
   expect(await glob('**', { cwd: path })).toEqual(['foo.txt'])
 }))
 
-test('undefined files does nothing', async () => withLocalTmpDir(async path => {
+it('undefined files does nothing', async () => withLocalTmpDir(async path => {
   await outputFiles(path, undefined)
   expect(await glob('**', { cwd: path })).toEqual([])
 }))
 
-test('create files', async () => withLocalTmpDir(async path => {
+it('create files', async () => withLocalTmpDir(async path => {
   await outputFiles(path, { 'foo.txt': 'foo' })
   expect(await glob('**', { cwd: path })).toEqual(['foo.txt'])
 }))
 
-test('create inside a folder', async () => withLocalTmpDir(async path => {
+it('create inside a folder', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
     folder: {
@@ -35,7 +36,7 @@ test('create inside a folder', async () => withLocalTmpDir(async path => {
   ])
 }))
 
-test('nested folders', async () => withLocalTmpDir(async path => {
+it('nested folders', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
     folder: {
@@ -54,7 +55,7 @@ test('nested folders', async () => withLocalTmpDir(async path => {
   ])
 }))
 
-test('folder chain', async () => withLocalTmpDir(async path => {
+it('folder chain', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
     'folder/folder2': {
@@ -69,7 +70,7 @@ test('folder chain', async () => withLocalTmpDir(async path => {
   ])
 }))
 
-test('file folder chain', async () => withLocalTmpDir(async path => {
+it('file folder chain', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
     'folder/folder2/foo.txt': 'foo bar',
@@ -82,7 +83,7 @@ test('file folder chain', async () => withLocalTmpDir(async path => {
   ])
 }))
 
-test('empty folder', async () => withLocalTmpDir(async path => {
+it('empty folder', async () => withLocalTmpDir(async path => {
   await outputFiles(path, {
     'foo.txt': 'foo',
     folder: {},
