@@ -1,4 +1,4 @@
-const outputFiles = require('../src')
+const outputFiles = require('output-files')
 const withLocalTmpDir = require('with-local-tmp-dir')
 const { exists } = require('fs-extra')
 const glob = require('glob-promise')
