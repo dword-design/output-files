@@ -1,7 +1,7 @@
 {
   "name": "output-files",
-  "version": "1.1.1",
-  "main": "src/index.js",
+  "version": "1.1.2",
+  "main": "dist/index.js",
   "repository": "https://github.com/dword-design/output-files",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
@@ -24,37 +24,24 @@
     "test"
   ],
   "scripts": {
+    "prepare:base": "base",
     "prepare:readme": "mos",
-    "prepare:config-files": "dw-config-files",
     "prepare": "npm-run-all prepare:*",
-    "pretest": "install-self",
+    "test:base": "base test",
     "test:readme": "mos test",
-    "test:unit": "nyc --reporter lcov mocha",
     "test": "npm-run-all test:*"
   },
   "mos": {
     "installation": false
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
   "dependencies": {
-    "fs-extra": "^8.1.0",
-    "lodash": "^4.17.15"
+    "fs-extra": "^8.1.0"
   },
   "devDependencies": {
-    "@dword-design/config-files": "^1.0.0",
-    "child-process-promise": "^2.2.1",
-    "expect": "^24.9.0",
+    "@dword-design/base-node": "^0.1.10",
     "glob-promise": "^3.4.0",
-    "husky": "^3.0.5",
-    "install-self": "dword-design/install-self#fork",
-    "mocha": "^6.2.1",
     "mos": "dword-design/mos#fork/mos",
     "npm-run-all": "^4.1.5",
-    "nyc": "^14.1.1",
     "with-local-tmp-dir": "^2.0.0"
   }
 }
