@@ -10,6 +10,7 @@
 Output a tree of files and directories by providing an object. Especially useful for testing with real files.
 <!--/@-->
 
+<!--@installation()-->
 ## Installation
 
 ```sh
@@ -19,6 +20,7 @@ npm install --save output-files
 # via Yarn
 yarn add output-files
 ```
+<!--/@-->
 
 ## Usage
 
