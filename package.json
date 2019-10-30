@@ -24,22 +24,16 @@
     "test"
   ],
   "scripts": {
-    "prepare:base": "base",
-    "prepare:readme": "mos",
-    "prepare": "npm-run-all prepare:*",
-    "test:base": "base test",
-    "test:readme": "mos test",
-    "test": "npm-run-all test:*"
+    "prepare": "base",
+    "test": "base test"
   },
   "mos": {
     "installation": false
   },
   "dependencies": {},
   "devDependencies": {
-    "@dword-design/base-node": "^0.2.0",
+    "@dword-design/base-node": "^0.3.0",
     "glob-promise": "^3.4.0",
-    "mos": "dword-design/mos#fork/mos",
-    "npm-run-all": "^4.1.5",
     "with-local-tmp-dir": "^2.0.3"
   }
 }
