@@ -1,6 +1,6 @@
 import { mapValues, values, promiseAll } from '@functions'
 import P from 'path'
-import { ensureDir, outputFile } from 'fs-extra'
+import { ensureDir, outputFile } from 'fs'
 
 const outputFiles = async (...args) => {
   const path = typeof args[0] === 'string' ? args[0] : ''
