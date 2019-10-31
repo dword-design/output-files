@@ -1,6 +1,6 @@
 {
   "name": "output-files",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "dist/index.js",
   "repository": "https://github.com/dword-design/output-files",
   "author": "Sebastian Landwehr <info@dword-design.de>",
@@ -24,12 +24,12 @@
     "test"
   ],
   "scripts": {
-    "prepare": "base",
-    "test": "base test"
+    "prepare": "base-node prepare",
+    "test": "base-node test"
   },
   "dependencies": {},
   "devDependencies": {
-    "@dword-design/base-node": "^0.3.0",
+    "@dword-design/base-node": "^0.4.1",
     "glob-promise": "^3.4.0",
     "with-local-tmp-dir": "^2.0.3"
   }
