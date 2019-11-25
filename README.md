@@ -1,26 +1,40 @@
-<!--@h1([pkg.name])-->
-# output-files
-<!--/@-->
+<!-- TITLE/ -->
 
-<!--@shields('npm', 'travis', 'coveralls', 'deps')-->
-[![npm version](https://img.shields.io/npm/v/output-files.svg)](https://www.npmjs.com/package/output-files) [![Build Status](https://img.shields.io/travis/dword-design/output-files/master.svg)](https://travis-ci.org/dword-design/output-files) [![Coverage Status](https://img.shields.io/coveralls/dword-design/output-files/master.svg)](https://coveralls.io/r/dword-design/output-files?branch=master) [![dependency status](https://img.shields.io/david/dword-design/output-files.svg)](https://david-dm.org/dword-design/output-files)
-<!--/@-->
+<h1>output-files</h1>
 
-<!--@pkg.description-->
+<!-- /TITLE -->
+
+
+<!-- BADGES/ -->
+
+<span class="badge-npmversion"><a href="https://npmjs.org/package/output-files" title="View this project on NPM"><img src="https://img.shields.io/npm/v/output-files.svg" alt="NPM version" /></a></span>
+<span class="badge-travisci"><a href="http://travis-ci.org/dword-design/output-files" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/dword-design/output-files/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-coveralls"><a href="https://coveralls.io/r/dword-design/output-files" title="View this project's coverage on Coveralls"><img src="https://img.shields.io/coveralls/dword-design/output-files.svg" alt="Coveralls Coverage Status" /></a></span>
+<span class="badge-daviddm"><a href="https://david-dm.org/dword-design/output-files" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/dword-design/output-files.svg" alt="Dependency Status" /></a></span>
+<span class="badge-shields"><a href="https://img.shields.io/badge/renovate-enabled-brightgreen.svg"><img src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg" /></a></span>
+
+<!-- /BADGES -->
+
+
+<!-- DESCRIPTION/ -->
+
 Output a tree of files and directories by providing an object. Especially useful for testing with real files.
-<!--/@-->
 
-<!--@installation()-->
-## Installation
+<!-- /DESCRIPTION -->
 
-```sh
-# via NPM
-npm install --save output-files
 
-# via Yarn
-yarn add output-files
-```
-<!--/@-->
+<!-- INSTALL/ -->
+
+<h2>Install</h2>
+
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
+<ul>
+<li>Install: <code>npm install --save output-files</code></li>
+<li>Require: <code>require('output-files')</code></li>
+</ul>
+
+<!-- /INSTALL -->
+
 
 ## Usage
 
@@ -52,8 +66,16 @@ await outputFiles({
 })
 ```
 
-<!--@license()-->
-## License
+<!-- LICENSE/ -->
 
-MIT © Sebastian Landwehr
-<!--/@-->
+<h2>License</h2>
+
+Unless stated otherwise all works are:
+
+<ul><li>Copyright &copy; Sebastian Landwehr</li></ul>
+
+and licensed under:
+
+<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
+
+<!-- /LICENSE -->
