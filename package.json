@@ -1,11 +1,11 @@
 {
   "name": "output-files",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/dword-design/output-files",
+  "repository": "dword-design/output-files",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "license": "MIT",
   "description": "Output a tree of files and directories by providing an object. Especially useful for testing with real files.",
@@ -36,5 +36,13 @@
     "expect": "^24.9.0",
     "glob-promise": "^3.4.0",
     "with-local-tmp-dir": "^2.0.3"
+  },
+  "maintainers": [],
+  "contributors": [
+    "dword-design (http://www.dword-design.de)",
+    "Renovate Bot (http://renovatebot.com)"
+  ],
+  "bugs": {
+    "url": "https://github.com/dword-design/output-files/issues"
   }
 }
