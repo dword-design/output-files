@@ -1,33 +1,41 @@
 {
   "name": "output-files",
   "version": "1.1.8",
-  "main": "dist/index.js",
+  "description": "Output a tree of files and directories by providing an object. Especially useful for testing with real files.",
+  "keywords": [
+    "build",
+    "create",
+    "declarative",
+    "directory",
+    "file",
+    "file system",
+    "fs",
+    "generate",
+    "json",
+    "object",
+    "output",
+    "recursive",
+    "test",
+    "tree",
+    "write"
+  ],
+  "bugs": {
+    "url": "https://github.com/dword-design/output-files/issues"
+  },
+  "repository": "dword-design/output-files",
+  "license": "MIT",
+  "author": "Sebastian Landwehr <info@dword-design.de>",
+  "contributors": [
+    "dword-design (http://www.dword-design.de)",
+    "Renovate Bot (http://renovatebot.com)"
+  ],
   "files": [
     "dist"
   ],
-  "repository": "dword-design/output-files",
-  "author": "Sebastian Landwehr <info@dword-design.de>",
-  "license": "MIT",
-  "description": "Output a tree of files and directories by providing an object. Especially useful for testing with real files.",
-  "keywords": [
-    "file",
-    "directory",
-    "tree",
-    "output",
-    "write",
-    "create",
-    "build",
-    "generate",
-    "fs",
-    "file system",
-    "recursive",
-    "object",
-    "json",
-    "declarative",
-    "test"
-  ],
+  "main": "dist/index.js",
   "scripts": {
-    "prepare": "base-node prepare",
+    "prepublishOnly": "base-node build",
+    "start": "base-node start",
     "test": "base-node test"
   },
   "dependencies": {},
@@ -37,12 +45,5 @@
     "glob-promise": "^3.4.0",
     "with-local-tmp-dir": "^2.0.3"
   },
-  "maintainers": [],
-  "contributors": [
-    "dword-design (http://www.dword-design.de)",
-    "Renovate Bot (http://renovatebot.com)"
-  ],
-  "bugs": {
-    "url": "https://github.com/dword-design/output-files/issues"
-  }
+  "maintainers": []
 }
