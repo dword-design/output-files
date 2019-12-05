@@ -730,9 +730,9 @@
     to-fast-properties "^2.0.0"
 
 "@dword-design/aliases@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@dword-design/aliases/-/aliases-1.1.0.tgz#a0be4e20c9dfb287346d5c514bdd4ef55165356f"
-  integrity sha512-m4t4M99r/yxjGrJFoQdzX02xcPFBmtVFumJ3wd6Or5CwPILTIprEttdClQ5Ar93JtM8ms44Ccgxg/Xdd+grJXw==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@dword-design/aliases/-/aliases-1.0.2.tgz#d45bca5bf752ad0d643729b939665a739c0c0ffa"
+  integrity sha512-ebxpP2DKN++v9+hpbsKcAjEck50gLq0oy8h0VrnFG1m3fGB4V7aV+8M20CY+IJHJcwa1SLXQxqR3Jy3PNRwv6w==
   dependencies:
     "@dword-design/functions" "^2.0.0"
     better-node-env "^1.0.3"
@@ -763,9 +763,9 @@
     "@dword-design/base" "^3.0.0"
 
 "@dword-design/base@^3.0.0":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.0.2.tgz#6d0d8e7b987d6d787d0b219cb37106bf8367ab83"
-  integrity sha512-n6Unuc0lTJ+D8e6QLJ7JT0+sqiGL51xf0kdqycRNtQig/6Rf1vRbWJDRzSL8KVabh/shLU9u8wIT68nKdNW+nw==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/base/-/base-3.0.3.tgz#84241f7fe04a92aedf3ecf25ee1a6cd732595133"
+  integrity sha512-0SFFP852LVwdNq2n+/d4TiZjzCoa+a+Vf0q0k+M0TOdEe7N0TkiO0IGpaxaBg8CJvOF1G1tmUy8tf4DURZuzaA==
   dependencies:
     "@babel/cli" "^7.6.4"
     "@babel/core" "^7.6.4"
@@ -779,7 +779,6 @@
     debounce "^1.2.0"
     depcheck dword-design/depcheck#fork
     eslint "^6.6.0"
-    expect "^24.9.0"
     get-projectz-readme-section-regex "^1.0.0"
     glob-promise "^3.4.0"
     install-self dword-design/install-self#fork
@@ -816,9 +815,9 @@
     tinycolor2 "^1.4.1"
 
 "@dword-design/json-schema-package@^1.0.0":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@dword-design/json-schema-package/-/json-schema-package-1.0.2.tgz#e0c337ebe5c77b51714a87a17428a191cad19844"
-  integrity sha512-AnaMQ1CkdXOkkNg20Ywf4bKaYWnG4ymt9yAVB94IJ1tdE2zQuBHE7VMggQckTxiFG3rvlZ+KC52ekLs+FrQKCw==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@dword-design/json-schema-package/-/json-schema-package-1.0.3.tgz#1668b64225384666d3cecf30002c821efcddf069"
+  integrity sha512-8/L1fm+7TXFtdqSe0vVzyTkTd1TRlvCX31ai6NBSnxMU/M1vb3bzIH3JXhu5FI374YXp6aDXibx86aehf8dFEw==
   dependencies:
     package-name-regex "^1.0.1"
     stable-version-regex "^1.0.1"
@@ -899,9 +898,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "12.12.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.12.tgz#529bc3e73dbb35dd9e90b0a1c83606a9d3264bdb"
-  integrity sha512-MGuvYJrPU0HUwqF7LqvIj50RZUX23Z+m583KBygKYUZLlZ88n6w28XRNJRJgsHukLEnLz6w6SvxZoLgbr5wLqQ==
+  version "12.12.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
+  integrity sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -1250,13 +1249,13 @@ browser-stdout@1.3.1:
   integrity sha512-qhAVI1+Av2X7qelOfAIYwXONood6XlZE/fXaBSmW/T5SzLAmCgzi+eiWE7fUvbHaeNBQH13UftjpXxsfLkMpgw==
 
 browserslist@^4.6.0, browserslist@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.8.0.tgz#6f06b0f974a7cc3a84babc2ccc56493668e3c789"
-  integrity sha512-HYnxc/oLRWvJ3TsGegR0SRL/UDnknGq2s/a8dYYEO+kOQ9m9apKoS5oiathLKZdh/e9uE+/J3j92qPlGD/vTqA==
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.8.2.tgz#b45720ad5fbc8713b7253c20766f701c9a694289"
+  integrity sha512-+M4oeaTplPm/f1pXDw84YohEv7B1i/2Aisei8s4s6k3QsoSHa7i5sz8u/cGQkkatCPxMASKxPualR4wwYgVboA==
   dependencies:
-    caniuse-lite "^1.0.30001012"
-    electron-to-chromium "^1.3.317"
-    node-releases "^1.1.41"
+    caniuse-lite "^1.0.30001015"
+    electron-to-chromium "^1.3.322"
+    node-releases "^1.1.42"
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -1308,7 +1307,7 @@ camelcase@^5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-caniuse-lite@^1.0.30001012:
+caniuse-lite@^1.0.30001015:
   version "1.0.30001015"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001015.tgz#15a7ddf66aba786a71d99626bc8f2b91c6f0f5f0"
   integrity sha512-/xL2AbW/XWHNu1gnIrO8UitBGoFthcsDgU9VLK1/dpsoxbaD5LscHozKze05R6WLsBvLhqv78dAPozMFQBYLbQ==
@@ -1803,7 +1802,7 @@ editorconfig@^0.15.3:
     semver "^5.6.0"
     sigmund "^1.0.1"
 
-electron-to-chromium@^1.3.317:
+electron-to-chromium@^1.3.322:
   version "1.3.322"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.322.tgz#a6f7e1c79025c2b05838e8e344f6e89eb83213a8"
   integrity sha512-Tc8JQEfGQ1MzfSzI/bTlSr7btJv/FFO7Yh6tanqVmIWOuNCu6/D1MilIEgLtmWqIrsv+o4IjpLAhgMBr/ncNAA==
@@ -2357,9 +2356,9 @@ get-package-name@^1.0.0:
   integrity sha512-s3FZaOiab+vUi9OZGjnCREYUJIsRh4UXqTZZAegXrG8k4oHq5B8NYhwE67+jxw1IbbsUiNUZI/2mEHxDaXTW+A==
 
 get-projectz-readme-section-regex@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/get-projectz-readme-section-regex/-/get-projectz-readme-section-regex-1.0.2.tgz#71d833699ed477bae232d405a2427749d359adcf"
-  integrity sha512-cpNpgBn0esGJIMUOfAJyxbIdhd5Tt21Mahb8OBptep5JeY3kGL6fESI0abBlEFkgxBDOwZ24hyBTtfhPy26iYw==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/get-projectz-readme-section-regex/-/get-projectz-readme-section-regex-1.0.3.tgz#e364dbf3867814aa8298ac1b9762d725eb3fb94c"
+  integrity sha512-QXrCXiG8071s0ygmhTX32OWRChbqU2xdZckc3+Jq0dFyVojao2RcrCalYdEF1MZcyL1pSU2Ekqhfm1qDmBMe1g==
 
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
@@ -3144,9 +3143,9 @@ lru-cache@^4.0.1, lru-cache@^4.1.5:
     yallist "^2.1.2"
 
 make-cli@^1.0.9:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/make-cli/-/make-cli-1.0.11.tgz#69f92e1c290f993e5900284ce7dd0b58a8cd2329"
-  integrity sha512-EHw00Z+008XxaHbHs7wLEQz+SqccyKSj4sstWoCuq5uMAJa/j5LI34dRipFkZu8eGleKevoGo0P2AdkKdYsiGg==
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/make-cli/-/make-cli-1.0.12.tgz#61feea4bc55ab4c106d4092935b83debad2938f7"
+  integrity sha512-5z2zQ3iT7elwP5zBXEGXArPNo/AFbsvSqJZztHFNzy0wI4tKjUCK8gfGsKW4lxCrc4tWeHxeoKLyvJ7bJMN1qw==
   dependencies:
     commander "^4.0.0"
 
@@ -3397,7 +3396,7 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.1.41:
+node-releases@^1.1.42:
   version "1.1.42"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.42.tgz#a999f6a62f8746981f6da90627a8d2fc090bbad7"
   integrity sha512-OQ/ESmUqGawI2PRX+XIRao44qWYBBfN54ImQYdWVTQqUckuejOg76ysSqDBK8NG3zwySRVnX36JwDQ6x+9GxzA==
