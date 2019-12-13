@@ -1,6 +1,6 @@
-import { mapValues, values, promiseAll } from '@functions'
+import { mapValues, values, promiseAll } from '@dword-design/functions'
 import P from 'path'
-import { ensureDir, outputFile } from 'fs'
+import { ensureDir, outputFile } from 'fs-extra'
 
 const outputFiles = async (...args) => {
   const path = typeof args[0] === 'string' ? args[0] : ''
