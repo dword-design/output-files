@@ -25,25 +25,28 @@
   "repository": "dword-design/output-files",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
-  "contributors": [
-    "dword-design (http://www.dword-design.de)",
-    "Renovate Bot (http://renovatebot.com)"
-  ],
   "files": [
     "dist"
   ],
   "main": "dist/index.js",
   "scripts": {
-    "prepublishOnly": "base-node build",
-    "start": "base-node start",
-    "test": "base-node test"
+    "prepublishOnly": "base build",
+    "start": "base start",
+    "test": "base test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@dword-design/functions": "^2.2.2",
+    "fs-extra": "^8.1.0"
+  },
   "devDependencies": {
-    "@dword-design/base-node": "^1.0.0",
+    "@dword-design/base": "^3.4.4",
     "expect": "^24.9.0",
     "glob-promise": "^3.4.0",
     "with-local-tmp-dir": "^2.0.3"
   },
+  "contributors": [
+    "dword-design (http://www.dword-design.de)",
+    "Renovate Bot (http://renovatebot.com)"
+  ],
   "maintainers": []
 }
