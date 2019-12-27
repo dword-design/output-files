@@ -30,7 +30,8 @@ Output a tree of files and directories by providing an object. Especially useful
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save output-files</code></li>
-<li>Require: <code>require('output-files')</code></li>
+<li>Import: <code>import * as pkg from ('output-files')</code></li>
+<li>Require: <code>const pkg = require('output-files')</code></li>
 </ul>
 
 <!-- /INSTALL -->
