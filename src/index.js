@@ -11,7 +11,7 @@ const outputFiles = async (...args) => {
       (child, localPath) => {
         const absPath = P.join(path, localPath)
         return (typeof child === 'string' ? outputFile : outputFiles)(absPath, child)
-      }
+      },
     )
     |> values
     |> promiseAll
