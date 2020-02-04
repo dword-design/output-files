@@ -17,6 +17,7 @@ jobs:
         git config --local user.name "GitHub Actions"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git add .
+        git reset yarn.lock
         git diff-index --quiet HEAD || git commit -m "Update changed files" --no-verify
         git push
     - run: yarn test
