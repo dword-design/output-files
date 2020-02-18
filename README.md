@@ -1,41 +1,34 @@
 <!-- TITLE/ -->
-
-<h1>output-files</h1>
-
+# output-files
 <!-- /TITLE -->
 
-
 <!-- BADGES/ -->
+[![NPM version](https://img.shields.io/npm/v/output-files.svg)](https://npmjs.org/package/output-files)
+![Linux macOS Windows compatible](https://img.shields.io/badge/os-linux%20%7C%C2%A0macos%20%7C%C2%A0windows-blue)
 
-<span class="badge-npmversion"><a href="https://npmjs.org/package/output-files" title="View this project on NPM"><img src="https://img.shields.io/npm/v/output-files.svg" alt="NPM version" /></a></span>
-<span class="badge-travisci"><a href="http://travis-ci.org/dword-design/output-files" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/dword-design/output-files/master.svg" alt="Travis CI Build Status" /></a></span>
-<span class="badge-coveralls"><a href="https://coveralls.io/r/dword-design/output-files" title="View this project's coverage on Coveralls"><img src="https://img.shields.io/coveralls/dword-design/output-files.svg" alt="Coveralls Coverage Status" /></a></span>
-<span class="badge-daviddm"><a href="https://david-dm.org/dword-design/output-files" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/dword-design/output-files.svg" alt="Dependency Status" /></a></span>
-<span class="badge-shields"><a href="https://img.shields.io/badge/renovate-enabled-brightgreen.svg"><img src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg" /></a></span>
+[![Build status](https://img.shields.io/github/workflow/status/dword-design/output-files/build)](https://github.com/dword-design/output-files/actions)
+[![Coverage status](https://img.shields.io/coveralls/dword-design/output-files)](https://coveralls.io/github/dword-design/output-files)
+[![Dependency status](https://img.shields.io/david/dword-design/output-files)](https://david-dm.org/dword-design/output-files)
+![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen)
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dword-design/output-files)
 <!-- /BADGES -->
 
-
 <!-- DESCRIPTION/ -->
-
 Output a tree of files and directories by providing an object. Especially useful for testing with real files.
-
 <!-- /DESCRIPTION -->
 
-
 <!-- INSTALL/ -->
+# Install
 
-<h2>Install</h2>
+```bash
+# NPM
+$ npm install output-files
 
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
-<ul>
-<li>Install: <code>npm install --save output-files</code></li>
-<li>Import: <code>import * as pkg from ('output-files')</code></li>
-<li>Require: <code>const pkg = require('output-files')</code></li>
-</ul>
-
+# Yarn
+$ yarn add output-files
+```
 <!-- /INSTALL -->
-
 
 ## Usage
 
@@ -68,15 +61,13 @@ await outputFiles({
 ```
 
 <!-- LICENSE/ -->
-
-<h2>License</h2>
+# License
 
 Unless stated otherwise all works are:
 
-<ul><li>Copyright &copy; Sebastian Landwehr</li></ul>
+Copyright &copy; Sebastian Landwehr <info@dword-design.de>
 
 and licensed under:
 
-<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
-
+[MIT License](https://opensource.org/licenses/MIT)
 <!-- /LICENSE -->
