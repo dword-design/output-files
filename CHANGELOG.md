@@ -1,3 +1,10 @@
+## [1.1.16](https://github.com/dword-design/output-files/compare/v1.1.15...v1.1.16) (2020-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v9 ([f5cce7f](https://github.com/dword-design/output-files/commit/f5cce7fa8d196ddb498bff4da039bcf6154bf7c1))
+
 ## [1.1.15](https://github.com/dword-design/output-files/compare/v1.1.14...v1.1.15) (2020-02-18)
 
 
