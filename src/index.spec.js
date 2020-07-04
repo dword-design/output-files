@@ -1,91 +1,102 @@
-import outputFiles from '.'
+import { identity, keyBy, mapValues, stubTrue } from '@dword-design/functions'
+import globby from 'globby'
 import withLocalTmpDir from 'with-local-tmp-dir'
-import glob from 'glob-promise'
+
+import self from '.'
+
+const runTest = config => () =>
+  withLocalTmpDir(async () => {
+    await self(...[...(config.path ? [config.path] : []), config.files])
+    expect(
+      globby('**', { onlyFiles: false })
+        |> await
+        |> keyBy(identity)
+        |> mapValues(stubTrue)
+    ).toEqual(config.result)
+  })
 
 export default {
-  'empty folder': () => withLocalTmpDir(async () => {
-    await outputFiles({
-      'foo.txt': 'foo',
+  'empty folder': {
+    files: {
       folder: {},
-    })
-    expect(await glob('**')).toEqual([
-      'folder',
-      'foo.txt',
-    ])
-  }),
-  'file folder chain': () => withLocalTmpDir(async () => {
-    await outputFiles({
       'foo.txt': 'foo',
+    },
+    result: { folder: true, 'foo.txt': true },
+  },
+  'file folder chain': {
+    files: {
       'folder/folder2/foo.txt': 'foo bar',
-    })
-    expect(await glob('**')).toEqual([
-      'folder',
-      'folder/folder2',
-      'folder/folder2/foo.txt',
-      'foo.txt',
-    ])
-  }),
-  files: () => withLocalTmpDir(async () => {
-    await outputFiles({ 'foo.txt': 'foo' })
-    expect(await glob('**')).toEqual(['foo.txt'])
-  }),
-  'folder chain': () => withLocalTmpDir(async () => {
-    await outputFiles({
       'foo.txt': 'foo',
-      'folder/folder2': {
-        'foo.txt': 'foo bar',
-      },
-    })
-    expect(await glob('**')).toEqual([
-      'folder',
-      'folder/folder2',
-      'folder/folder2/foo.txt',
-      'foo.txt',
-    ])
-  }),
-  folder: () => withLocalTmpDir(async () => {
-    await outputFiles({
-      'foo.txt': 'foo',
+    },
+    result: {
+      folder: true,
+      'folder/folder2': true,
+      'folder/folder2/foo.txt': true,
+      'foo.txt': true,
+    },
+  },
+  files: {
+    files: { 'foo.txt': 'foo' },
+    result: {
+      'foo.txt': true,
+    },
+  },
+  folder: {
+    files: {
       folder: {
         'bar.txt': 'bar',
         'baz.txt': 'baz',
       },
-    })
-    expect(await glob('**')).toEqual([
-      'folder',
-      'folder/bar.txt',
-      'folder/baz.txt',
-      'foo.txt',
-    ])
-  }),
-  'missing files': () => withLocalTmpDir(async () => {
-    await outputFiles('.')
-    expect(await glob('**')).toEqual([])
-  }),
-  'missing path': () => withLocalTmpDir(async () => {
-    await outputFiles({ 'foo.txt': 'bar' })
-    expect(await glob('**')).toEqual(['foo.txt'])
-  }),
-  'nested folders': () => withLocalTmpDir(async () => {
-    await outputFiles({
       'foo.txt': 'foo',
+    },
+    result: {
+      folder: true,
+      'folder/bar.txt': true,
+      'folder/baz.txt': true,
+      'foo.txt': true,
+    },
+  },
+  'folder chain': {
+    files: {
+      'folder/folder2': {
+        'foo.txt': 'foo bar',
+      },
+      'foo.txt': 'foo',
+    },
+    result: {
+      folder: true,
+      'folder/folder2': true,
+      'folder/folder2/foo.txt': true,
+      'foo.txt': true,
+    },
+  },
+  'missing files': {
+    result: {},
+  },
+  'nested folders': {
+    files: {
       folder: {
         'bar.txt': 'bar',
         folder2: {
           'baz.txt': 'baz',
         },
       },
-    })
-    expect(await glob('**')).toEqual([
-      'folder',
-      'folder/bar.txt',
-      'folder/folder2',
-      'folder/folder2/baz.txt',
-      'foo.txt',
-    ])
-  }),
-  path: () => withLocalTmpDir(async () => {
-    await outputFiles('foo', { 'bar.txt': 'baz' })
-    expect(await glob('**')).toEqual(['foo', 'foo/bar.txt'])
-  }),
-}
+      'foo.txt': 'foo',
+    },
+    result: {
+      folder: true,
+      'folder/bar.txt': true,
+      'folder/folder2': true,
+      'folder/folder2/baz.txt': true,
+      'foo.txt': true,
+    },
+  },
+  path: {
+    files: { 'bar.txt': 'baz' },
+    path: 'foo',
+    result: {
+      foo: true,
+      'foo/bar.txt': true,
+    },
+  },
+} |> mapValues(runTest)
