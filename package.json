@@ -28,10 +28,10 @@
   ],
   "scripts": {
     "commit": "base commit",
-    "depgraph": "base depgraph",
+    "dev": "base dev",
+    "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "release": "base release",
     "test": "base test"
   },
   "dependencies": {
@@ -40,7 +40,10 @@
   },
   "devDependencies": {
     "@dword-design/base": "^6.0.0",
-    "glob-promise": "^3.4.0",
+    "globby": "^11.0.1",
     "with-local-tmp-dir": "^2.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
