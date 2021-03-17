@@ -20,6 +20,7 @@
     "write"
   ],
   "repository": "dword-design/output-files",
+  "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
