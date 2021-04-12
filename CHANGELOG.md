@@ -1,3 +1,10 @@
+## [1.1.25](https://github.com/dword-design/output-files/compare/v1.1.24...v1.1.25) (2021-04-12)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#36](https://github.com/dword-design/output-files/issues/36)) ([d7654c9](https://github.com/dword-design/output-files/commit/d7654c93218a6679f7a58ac0f668e366e6a24e98))
+
 ## [1.1.24](https://github.com/dword-design/output-files/compare/v1.1.23...v1.1.24) (2021-03-31)
 
 
