@@ -1,3 +1,10 @@
+## [1.1.26](https://github.com/dword-design/output-files/compare/v1.1.25...v1.1.26) (2021-04-20)
+
+
+### Bug Fixes
+
+* updated package.json[keywords] ([#40](https://github.com/dword-design/output-files/issues/40)) ([5c6c862](https://github.com/dword-design/output-files/commit/5c6c86203b92867e3a63ab315b68bc90f2a984cb))
+
 ## [1.1.25](https://github.com/dword-design/output-files/compare/v1.1.24...v1.1.25) (2021-04-12)
 
 
