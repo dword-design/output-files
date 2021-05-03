@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/dword-design/output-files/compare/v2.0.0...v2.0.1) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4 ([#45](https://github.com/dword-design/output-files/issues/45)) ([af01fa2](https://github.com/dword-design/output-files/commit/af01fa2c11cb92288fd3687adb5710638ada8bc5))
+
 # [2.0.0](https://github.com/dword-design/output-files/compare/v1.1.27...v2.0.0) (2021-05-03)
 
 
