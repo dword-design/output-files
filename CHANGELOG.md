@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/dword-design/output-files/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency with-local-tmp-dir to v4 ([#47](https://github.com/dword-design/output-files/issues/47)) ([ce1bbd6](https://github.com/dword-design/output-files/commit/ce1bbd6a69c29c887b1c2e3c15842f8c7ed63adc))
+
 ## [2.0.1](https://github.com/dword-design/output-files/compare/v2.0.0...v2.0.1) (2021-05-03)
 
 
