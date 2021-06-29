@@ -1,6 +1,6 @@
 {
   "name": "output-files",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Output a tree of files and directories by providing an object. Especially useful for testing with real files.",
   "keywords": [
     "build",
