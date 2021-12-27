@@ -3,7 +3,7 @@
 <!-- /TITLE -->
 
 <!-- BADGES/ -->
-  <p>
+<p>
     <a href="https://npmjs.org/package/output-files">
       <img
         src="https://img.shields.io/npm/v/output-files.svg"
