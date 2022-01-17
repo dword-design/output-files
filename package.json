@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^8.0.0",
-    "globby": "^11.0.1",
+    "globby": "^12.0.0",
     "with-local-tmp-dir": "^4.0.0"
   },
   "engines": {
