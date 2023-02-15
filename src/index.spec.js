@@ -1,102 +1,108 @@
 import { identity, keyBy, mapValues, stubTrue } from '@dword-design/functions'
-import globby from 'globby'
-import withLocalTmpDir from 'with-local-tmp-dir'
+import tester from '@dword-design/tester'
+import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
+import { globby } from 'globby'
 
-import self from '.'
+import self from './index.js'
 
-const runTest = config => () =>
-  withLocalTmpDir(async () => {
-    await self(...[...(config.path ? [config.path] : []), config.files])
-    expect(
-      globby('**', { onlyFiles: false })
-        |> await
-        |> keyBy(identity)
-        |> mapValues(stubTrue)
-    ).toEqual(config.result)
-  })
-
-export default {
-  'empty folder': {
-    files: {
-      folder: {},
-      'foo.txt': 'foo',
-    },
-    result: { folder: true, 'foo.txt': true },
-  },
-  'file folder chain': {
-    files: {
-      'folder/folder2/foo.txt': 'foo bar',
-      'foo.txt': 'foo',
-    },
-    result: {
-      folder: true,
-      'folder/folder2': true,
-      'folder/folder2/foo.txt': true,
-      'foo.txt': true,
-    },
-  },
-  files: {
-    files: { 'foo.txt': 'foo' },
-    result: {
-      'foo.txt': true,
-    },
-  },
-  folder: {
-    files: {
-      folder: {
-        'bar.txt': 'bar',
-        'baz.txt': 'baz',
+export default tester(
+  {
+    'empty folder': {
+      files: {
+        folder: {},
+        'foo.txt': 'foo',
       },
-      'foo.txt': 'foo',
+      result: { folder: true, 'foo.txt': true },
     },
-    result: {
-      folder: true,
-      'folder/bar.txt': true,
-      'folder/baz.txt': true,
-      'foo.txt': true,
-    },
-  },
-  'folder chain': {
-    files: {
-      'folder/folder2': {
-        'foo.txt': 'foo bar',
+    'file folder chain': {
+      files: {
+        'folder/folder2/foo.txt': 'foo bar',
+        'foo.txt': 'foo',
       },
-      'foo.txt': 'foo',
+      result: {
+        folder: true,
+        'folder/folder2': true,
+        'folder/folder2/foo.txt': true,
+        'foo.txt': true,
+      },
     },
-    result: {
-      folder: true,
-      'folder/folder2': true,
-      'folder/folder2/foo.txt': true,
-      'foo.txt': true,
-    },
-  },
-  'missing files': {
-    result: {},
-  },
-  'nested folders': {
     files: {
-      folder: {
-        'bar.txt': 'bar',
-        folder2: {
+      files: { 'foo.txt': 'foo' },
+      result: {
+        'foo.txt': true,
+      },
+    },
+    folder: {
+      files: {
+        folder: {
+          'bar.txt': 'bar',
           'baz.txt': 'baz',
         },
+        'foo.txt': 'foo',
       },
-      'foo.txt': 'foo',
+      result: {
+        folder: true,
+        'folder/bar.txt': true,
+        'folder/baz.txt': true,
+        'foo.txt': true,
+      },
     },
-    result: {
-      folder: true,
-      'folder/bar.txt': true,
-      'folder/folder2': true,
-      'folder/folder2/baz.txt': true,
-      'foo.txt': true,
+    'folder chain': {
+      files: {
+        'folder/folder2': {
+          'foo.txt': 'foo bar',
+        },
+        'foo.txt': 'foo',
+      },
+      result: {
+        folder: true,
+        'folder/folder2': true,
+        'folder/folder2/foo.txt': true,
+        'foo.txt': true,
+      },
+    },
+    'missing files': {
+      result: {},
+    },
+    'nested folders': {
+      files: {
+        folder: {
+          'bar.txt': 'bar',
+          folder2: {
+            'baz.txt': 'baz',
+          },
+        },
+        'foo.txt': 'foo',
+      },
+      result: {
+        folder: true,
+        'folder/bar.txt': true,
+        'folder/folder2': true,
+        'folder/folder2/baz.txt': true,
+        'foo.txt': true,
+      },
+    },
+    path: {
+      files: { 'bar.txt': 'baz' },
+      path: 'foo',
+      result: {
+        foo: true,
+        'foo/bar.txt': true,
+      },
     },
   },
-  path: {
-    files: { 'bar.txt': 'baz' },
-    path: 'foo',
-    result: {
-      foo: true,
-      'foo/bar.txt': true,
+  [
+    testerPluginTmpDir(),
+    {
+      transform: config => async () => {
+        await self(...[...(config.path ? [config.path] : []), config.files])
+        expect(
+          globby('**', { onlyFiles: false })
+            |> await
+            |> keyBy(identity)
+            |> mapValues(stubTrue)
+        ).toEqual(config.result)
+      },
     },
-  },
-} |> mapValues(runTest)
+  ]
+)
