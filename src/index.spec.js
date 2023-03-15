@@ -100,9 +100,9 @@ export default tester(
           globby('**', { onlyFiles: false })
             |> await
             |> keyBy(identity)
-            |> mapValues(stubTrue)
+            |> mapValues(stubTrue),
         ).toEqual(config.result)
       },
     },
-  ]
+  ],
 )
