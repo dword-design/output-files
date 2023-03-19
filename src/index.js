@@ -15,7 +15,7 @@ const outputFiles = async (...args) => {
 
       return (typeof child === 'string' ? outputFile : outputFiles)(
         absPath,
-        child
+        child,
       )
     })
     |> values
