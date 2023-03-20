@@ -1,3 +1,11 @@
+## [2.0.19](https://github.com/dword-design/output-files/compare/v2.0.18...v2.0.19) (2023-03-20)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-tmp-dir to v2.1.18 ([c0101a8](https://github.com/dword-design/output-files/commit/c0101a846e8fca239317319de48a2e6071e2efba))
+* update dependency fs-extra to v11.1.1 ([d3b3904](https://github.com/dword-design/output-files/commit/d3b3904170fba3a496e182fcb3b3d6e6a05f568d))
+
 ## [2.0.18](https://github.com/dword-design/output-files/compare/v2.0.17...v2.0.18) (2023-03-19)
 
 
