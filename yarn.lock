@@ -1404,9 +1404,9 @@
   integrity sha512-hqREdzS0UiNaGxm50Kl/PdZCjr+jhID581Y/csnAc8BFU6+fulL6uAEOUCQUm59ejtnf9ifDCfSKrMEK+MvvbA==
 
 "@dword-design/tester-plugin-tmp-dir@^2.1.9":
-  version "2.1.19"
-  resolved "https://registry.yarnpkg.com/@dword-design/tester-plugin-tmp-dir/-/tester-plugin-tmp-dir-2.1.19.tgz#a9cbfd821e561911ac3616730667a6b7d4406926"
-  integrity sha512-Ei4+e7qP3sXHflWvGNOY3JEE5ApRPP+nF7f2RJQmP62pePvQudw5SVIscK1xNglZ6SEPtgWswTsdD0HCTvp0uQ==
+  version "2.1.21"
+  resolved "https://registry.yarnpkg.com/@dword-design/tester-plugin-tmp-dir/-/tester-plugin-tmp-dir-2.1.21.tgz#bdf0398b954aafd30ed836b765a3ac7f323c0a69"
+  integrity sha512-4gwQPJqh65XSI3YDHA5dITo0dDCCCDHupjVr7wZFX6fm6/APd+V9epMWgqX/ArZo82C+Qj+NK/VwlL3T7Uncaw==
   dependencies:
     with-local-tmp-dir "^5.0.0"
 
@@ -11197,9 +11197,9 @@ wide-align@^1.1.5:
     string-width "^1.0.2 || 2 || 3 || 4"
 
 with-local-tmp-dir@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/with-local-tmp-dir/-/with-local-tmp-dir-5.0.0.tgz#6565ee6e6bbf17f80d3def31f2b3404722fb0a9a"
-  integrity sha512-30Ppg9fPL/rrlh5PPOxqB0jYDztKrhD2K4HnVJaq99qHq5t5Dgi7SKWB1WvPvb33Rjg9KRtrrCn3jes5p8jooA==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/with-local-tmp-dir/-/with-local-tmp-dir-5.0.1.tgz#5fa0570e1560008c6089c8f6759a5236f7af4a28"
+  integrity sha512-Ds8Ssl9sfMZArPBlSkEQwxh+EVq3IG8lWxTUipe1ZxP5eNNrkRC622ukpAkhR63jCSu5mvqJ/3bEl1RakRZufw==
   dependencies:
     "@dword-design/chdir" "^2.0.0"
     tmp-promise "^3.0.0"
