@@ -1,3 +1,10 @@
+## [2.0.27](https://github.com/dword-design/output-files/compare/v2.0.26...v2.0.27) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.1.4 ([8a7e62c](https://github.com/dword-design/output-files/commit/8a7e62c16d7e940b02caf56bec443f233f791d99))
+
 ## [2.0.26](https://github.com/dword-design/output-files/compare/v2.0.25...v2.0.26) (2023-04-11)
 
 
