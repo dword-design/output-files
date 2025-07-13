@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/dword-design/output-files/compare/v2.0.32...v3.0.0) (2025-07-13)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#128](https://github.com/dword-design/output-files/issues/128)) ([5990d24](https://github.com/dword-design/output-files/commit/5990d24dffffc35c10bbbaa385b4ff4eb8a0fe2c))
+
+
+### BREAKING CHANGES
+
+* node.js >= 18
+
 ## [2.0.32](https://github.com/dword-design/output-files/compare/v2.0.31...v2.0.32) (2023-11-28)
 
 
