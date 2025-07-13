@@ -1,3 +1,31 @@
+## [2.0.32](https://github.com/dword-design/output-files/compare/v2.0.31...v2.0.32) (2023-11-28)
+
+
+### Bug Fixes
+
+* update dependency fs-extra to v11.2.0 ([088fd49](https://github.com/dword-design/output-files/commit/088fd49111eed388b3b59601c79da869a8d526e9))
+
+## [2.0.31](https://github.com/dword-design/output-files/compare/v2.0.30...v2.0.31) (2023-07-06)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.2 ([739cd5e](https://github.com/dword-design/output-files/commit/739cd5e512afc9dd61c58fcc05e8b82b583e61bc))
+
+## [2.0.30](https://github.com/dword-design/output-files/compare/v2.0.29...v2.0.30) (2023-07-01)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.1 ([3788f5a](https://github.com/dword-design/output-files/commit/3788f5af45587b8614c3d57fe9695a8cebcf886d))
+
+## [2.0.29](https://github.com/dword-design/output-files/compare/v2.0.28...v2.0.29) (2023-06-18)
+
+
+### Bug Fixes
+
+* update dependency globby to v13.2.0 ([1261c70](https://github.com/dword-design/output-files/commit/1261c708d37328aa9179e895f97131a271f898f5))
+
 ## [2.0.28](https://github.com/dword-design/output-files/compare/v2.0.27...v2.0.28) (2023-05-13)
 
 
