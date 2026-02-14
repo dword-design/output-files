@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/dword-design/output-files/compare/v3.0.0...v4.0.0) (2026-02-14)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v16 ([#154](https://github.com/dword-design/output-files/issues/154)) ([2b0ad5a](https://github.com/dword-design/output-files/commit/2b0ad5acba79e13b913ad5c5129852e5ed62655c))
+
+
+### BREAKING CHANGES
+
+* node.js >= 22
+
 # [3.0.0](https://github.com/dword-design/output-files/compare/v2.0.32...v3.0.0) (2025-07-13)
 
 
