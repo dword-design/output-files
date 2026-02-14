@@ -1,5 +1,6 @@
 import pathLib from 'node:path';
 
+import defaults from '@dword-design/defaults';
 import { expect, test } from '@playwright/test';
 import endent from 'endent';
 import { execaCommand } from 'execa';
@@ -60,7 +61,9 @@ const tests: Record<string, TestConfig> = {
   },
 };
 
-for (const [name, testConfig] of Object.entries(tests)) {
+for (const [name, _testConfig] of Object.entries(tests)) {
+  const testConfig = defaults(_testConfig, { files: {} });
+
   test(name, async ({}, testInfo) => {
     const cwd = testInfo.outputPath();
     await self(cwd, testConfig.files);
