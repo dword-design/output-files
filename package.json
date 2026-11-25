@@ -50,7 +50,7 @@
     "fs-extra": "^11.1.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^16.0.0",
+    "@dword-design/base": "^17.0.0",
     "@dword-design/defaults": "^1.1.1",
     "@playwright/test": "^1.54.1",
     "@types/fs-extra": "^11.0.4",
